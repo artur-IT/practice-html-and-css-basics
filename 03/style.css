@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;1,300&display=swap");
+
+div {
+  font-family: "Source Sans 3";
+}
+
+.child--first {
+  width: 30%;
+}
+.child--middle {
+  width: 30%;
+  font-weight: 700;
+}
+.child--last {
+  width: 40%;
+  font-style: italic;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+}
+
+.parent--inline-block {
+  display: inline-block;
+}
+.parent--float {
+  float: right;
+}
+.parent--flexbox {
+  display: flex;
+}
+
+.child {
+  display: inline;
+  margin: 10px auto;
+}
