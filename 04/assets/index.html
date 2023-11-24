@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - 3 level</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      color: #234;
+      background-color: #abc;
+      font-family: sans-serif;
+      font-size: 0.7rem;
+    }
+
+    ul {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background: #fff;
+    }
+
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      position: relative;
+    }
+    li:hover > ul {
+      display: block;
+    }
+    nav > ul > li {
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+    }
+    nav > ul > li:hover {
+      border-top: 3px solid darkblue;
+    }
+    li ul {
+      background-color: #333;
+    }
+    li ul li {
+      background-color: #333;
+    }
+    li ul li a {
+      color: #fff;
+    }
+    ul ul {
+      position: absolute;
+      display: none;
+      width: 100px;
+      margin: 5px -8px;
+      padding: 5px 0px;
+    }
+    ul ul li {
+      display: block;
+    }
+
+    ul ul ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    a {
+      color: #123;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li>
+          <a href="#">ITEMS</a>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li>
+              <a href="#">Item 2</a>
+              <ul>
+                <li><a href="#">Item 2.1</a></li>
+                <li><a href="#">Item 2.2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">SETTINGS</a>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
